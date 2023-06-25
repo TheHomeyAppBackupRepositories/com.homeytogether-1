@@ -1,0 +1,1 @@
+Lockdowns around the world have taken their toll on people. That’s why today, we announce a radically new way of communication, using the environment you’re in the most: your home.

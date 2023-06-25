@@ -1,0 +1,75 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.homeytogether",
+  "version": "1.0.8",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "name": {
+    "en": "Homey Together"
+  },
+  "description": {
+    "en": "Feeling alone? We are here to help!",
+    "nl": "Voel je je alleen? Wij zijn hier om te helpen!"
+  },
+  "brandColor": "#FE627E",
+  "category": [
+    "internet"
+  ],
+  "homepage": "https://together.homey.app",
+  "support": "mailto:support@athom.com",
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Athom B.V.",
+    "email": "apps@athom.nl"
+  },
+  "api": {
+    "getShareLink": {
+      "method": "get",
+      "path": "/share_link"
+    }
+  },
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "A Homey Together message is received",
+          "nl": "Een Homey Together bericht is ontvangen"
+        },
+        "hint": {
+          "en": "This card is triggered when someone sends you a message!",
+          "nl": "Deze card wordt getriggered wanneer iemand je een berichtje stuurt!"
+        },
+        "tokens": [
+          {
+            "name": "message",
+            "type": "string",
+            "title": {
+              "en": "Message",
+              "nl": "Bericht"
+            },
+            "example": {
+              "en": "Some kind words",
+              "nl": "Een paar vriendelijke woorden"
+            }
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            },
+            "example": {
+              "en": "Mc'Lovin"
+            }
+          }
+        ],
+        "id": "aprilfools_trigger"
+      }
+    ]
+  }
+}
